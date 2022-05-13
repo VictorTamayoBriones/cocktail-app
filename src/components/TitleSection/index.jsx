@@ -1,5 +1,7 @@
+import { Title } from "./style"
+
 export const TitleSection = ({children}) =>{
     return(
-        <h2>{children}</h2>
+        <Title>{children}</Title>
     )
 }

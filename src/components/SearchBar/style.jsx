@@ -17,6 +17,7 @@ export const SearchContainer = styled.div`
     width: 95%;
     display: flex;
     align-items: center;
+    position: relative;
     label{
         position: absolute;
         right: 30px;

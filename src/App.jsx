@@ -4,11 +4,13 @@ import { AppRoutes } from "./routes"
 
 function App() {
   return (
-    <>
+    <div >
       <Header/>
-      <AppRoutes/>
+      <div className="outlet">
+        <AppRoutes/>
+      </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 
