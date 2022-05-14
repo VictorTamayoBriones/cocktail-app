@@ -3,6 +3,7 @@ import { Drink } from '../../../components/Drink';
 import styled from 'styled-components';
 
 export const ListDrinks = () =>{
+
     return(
         <List>
             <Drink image={mojito} text="Mojito" />
