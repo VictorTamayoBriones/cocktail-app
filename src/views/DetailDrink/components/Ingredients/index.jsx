@@ -6,7 +6,12 @@ export const Ingredients = () =>{
         <>
             <SubTitle>Ingredients</SubTitle>
             <Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo quod odio optio voluptatum voluptatibus eveniet molestias laborum repudiandae, sapiente numquam. Soluta, deleniti? Vero, quos quaerat? Hic iure eligendi possimus.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
             </Text>
         </>
     )

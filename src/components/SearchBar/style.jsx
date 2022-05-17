@@ -8,12 +8,13 @@ export const SearchInput = styled.input`
     background: transparent;
     font-size: 20px;
     color: white;
+    outline: none;
     &::placeholder{
         color: #e8e8e8;
     }
 `;
 
-export const SearchContainer = styled.div`
+export const SearchContainer = styled.form`
     width: 95%;
     display: flex;
     align-items: center;

@@ -18,5 +18,10 @@ export const Details = styled.section`
 `;
 
 export const Text = styled.p`
-    color: ${ theme.darkSecondaryColor }
+    margin: 10px 0px;
+    color: ${ theme.darkSecondaryColor };
+    line-height: 28px;
+    ul{
+        list-style: none;
+    }
 `;
