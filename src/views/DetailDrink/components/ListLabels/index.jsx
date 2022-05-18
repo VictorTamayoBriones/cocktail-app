@@ -4,11 +4,11 @@ import { List } from "./style"
 export const ListLabels = () =>{
     return(
         <List>
-            <Label>Vodka</Label>
-            <Label>USA</Label>
-            <Label>Bacacho</Label>
-            <Label>Alcohol</Label>
-            <Label>Ron</Label>
+            <li><Label>Vodka</Label></li>
+            <li><Label>USA</Label></li>
+            <li><Label>Bacacho</Label></li>
+            <li><Label>Alcohol</Label></li>
+            <li><Label>Ron</Label></li>
         </List>
     )
 }

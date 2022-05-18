@@ -15,13 +15,18 @@ export const Details = styled.section`
     .ingredients{
         width: 45%;
     }
+    ul{
+        list-style: none;
+    }
+    .ingredients{
+        margin: 10px 0px;
+        color: ${ theme.darkSecondaryColor };
+        line-height: 28px;        
+    }
 `;
 
 export const Text = styled.p`
     margin: 10px 0px;
     color: ${ theme.darkSecondaryColor };
     line-height: 28px;
-    ul{
-        list-style: none;
-    }
 `;

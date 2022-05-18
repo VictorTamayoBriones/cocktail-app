@@ -1,7 +1,7 @@
 import { SearchContainer, SearchInput } from "./style"
 import IconSearch from '../../assets/icons/search.svg';
 import { useState } from "react";
-import { getCocktail } from "../../services/getCocktail";
+import { getCocktailsList } from "../../services/getCocktailsList";
 import { useContext } from "react";
 import { DrinksContext } from '../../context/drinks';
 
@@ -13,8 +13,9 @@ export const SearchBar=()=>{
 
     const handleSubmit=async (e, name)=>{
         e.preventDefault()
-        let cocktails = await  getCocktail(name)
-        await setDrinks(cocktails)
+        let cocktails = await  getCocktailsList(name);
+        await setDrinks(cocktails);
+        setSearch('');
     }
 
     return(

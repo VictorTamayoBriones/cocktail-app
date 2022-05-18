@@ -6,11 +6,11 @@ import { DrinksContext } from '../../../context/drinks';
 export const ListDrinks = () =>{
 
     const { drinks } = useContext(DrinksContext);
-    let drinksList = drinks.drinks
+    
     return(
         <List>
-            { drinksList.length > 0 ?
-                drinksList.map( drink => (<Drink key={drink.idDrink} image={drink.strDrinkThumb} text={drink.strDrink} />) )
+            { drinks.length > 0 ?
+                drinks.map( drink => (<Drink key={drink.idDrink} image={drink.strDrinkThumb} text={drink.strDrink} idDrink={drink.idDrink}/>) )
             : null }
         </List>
     )

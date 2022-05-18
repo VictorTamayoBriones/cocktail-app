@@ -5,21 +5,27 @@ import { Ingredients } from "./components/Ingredients"
 import { Glass } from "./components/Glass"
 import { ListLabels } from "./components/ListLabels"
 import { Instructions } from "./components/Instructions"
+import { useParams } from "react-router-dom"
+import { useGetCocktail } from "../../hooks/useGetCocktail"
 
 export const DetailView = () =>{
+
+    const {id}=useParams();
+    const cocktail = useGetCocktail(id)
+    console.log(cocktail)
     return(
         <>
-            <TitleSection>Mojito</TitleSection>
+            <TitleSection>{cocktail.strDrink}</TitleSection>
             <Details>
                 <div className="data">
-                    <img src={mojito} alt="" />
-                    <ListLabels/>
+                    <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+                    <ListLabels labels={cocktail.strTags}/>
                 </div>
                 <div className="ingredients">
                     <Ingredients/>
-                    <Glass/>
+                    <Glass glass={cocktail.strGlass} />
                 </div>
-                <Instructions/>
+                <Instructions instructions={cocktail.strInstructions} />
             </Details>   
         </>
     )

@@ -5,14 +5,14 @@ export const Ingredients = () =>{
     return(
         <>
             <SubTitle>Ingredients</SubTitle>
-            <Text>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+            
+                <ul className="ingredients">
+                    <li><p>Lorem ipsum dolor sit amet.</p></li>
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel.</p></li>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                    <li><p>Lorem ipsum dolor sit amet consectetur.</p></li>
                 </ul>
-            </Text>
+            
         </>
     )
 }

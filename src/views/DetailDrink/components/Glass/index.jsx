@@ -1,11 +1,11 @@
 import { TextSubTitle } from "../../../../components/SubTitle/style"
 import { Text } from "../../style"
 
-export const Glass = () =>{
+export const Glass = ({glass}) =>{
     return(
         <>
             <TextSubTitle>Glass</TextSubTitle>
-            <Text>Lorem ipsum dolor sit.</Text>
+            <Text>{glass}</Text>
         </>
     )
 }
