@@ -11,18 +11,28 @@ export const Details = styled.section`
     
     .data{
         width: 45%;
+        img{
+            width: 100%;
+        }
     }
     .ingredients{
         width: 45%;
     }
+
     ul{
         list-style: none;
+        width: 100%;
     }
-    .ingredients{
-        margin: 10px 0px;
-        color: ${ theme.darkSecondaryColor };
-        line-height: 28px;        
+
+    .ingredientsList{
+        width: 100%;
+        ul{
+            margin: 10px 0px;
+            color: ${ theme.darkSecondaryColor };
+            line-height: 28px;        
+        }
     }
+
 `;
 
 export const Text = styled.p`

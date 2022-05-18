@@ -19,16 +19,11 @@ const Container = styled.footer`
     align-items: center;
     padding: 10px 0px;
     color: #fff;
-    position: absolute;
-    bottom: 0;
+
     text-shadow: 
         -1px -1px 1px ${ theme.darkMainColor }, 
         1px 1px 1px ${ theme.darkMainColor },
         1px -1px 1px ${ theme.darkMainColor },
         -1px 1px 1px ${ theme.darkMainColor };
 
-    @media (min-width: 1000px){
-        position: relative;
-        bottom: auto;
-    }
 `;
