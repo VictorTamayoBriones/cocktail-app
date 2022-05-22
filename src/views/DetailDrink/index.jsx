@@ -11,8 +11,8 @@ import { useGetCocktail } from "../../hooks/useGetCocktail"
 export const DetailView = () =>{
 
     const {id}=useParams();
-    const cocktail = useGetCocktail(id)
-    console.log(cocktail)
+    const {cocktail, ingredients} = useGetCocktail(id)
+    console.log(cocktail, ingredients)
     return(
         <>
             <TitleSection>{cocktail.strDrink}</TitleSection>
@@ -22,7 +22,7 @@ export const DetailView = () =>{
                     <ListLabels labels={cocktail.strTags}/>
                 </div>
                 <div className="ingredients">
-                    <Ingredients/>
+                    <Ingredients data={ingredients}/>
                     <Glass glass={cocktail.strGlass} />
                 </div>
                 <Instructions instructions={cocktail.strInstructions} />

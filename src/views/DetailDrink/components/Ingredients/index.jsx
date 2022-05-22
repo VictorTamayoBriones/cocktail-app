@@ -1,15 +1,15 @@
 import { SubTitle } from "../../../../components/SubTitle"
 
-export const Ingredients = () =>{
+export const Ingredients = ({data}) =>{
+    
     return(
         <div className="ingredientsList">
             <SubTitle>Ingredients</SubTitle>
             
-                <ul >
-                    <li><p>Lorem ipsum dolor sit amet.</p></li>
-                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel.</p></li>
-                    <li><p>Lorem ipsum dolor sit.</p></li>
-                    <li><p>Lorem ipsum dolor sit amet consectetur.</p></li>
+                <ul>
+                    {data[0]?.map( (item,i) =>(
+                        <li key={item+i}>{item[1]}</li>
+                    ))}
                 </ul>
             
         </div>

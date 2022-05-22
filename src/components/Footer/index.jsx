@@ -19,7 +19,7 @@ const Container = styled.footer`
     align-items: center;
     padding: 10px 0px;
     color: #fff;
-
+    margin-top: 20px;
     text-shadow: 
         -1px -1px 1px ${ theme.darkMainColor }, 
         1px 1px 1px ${ theme.darkMainColor },

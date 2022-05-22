@@ -9,7 +9,7 @@ export const ListDrinks = () =>{
     
     return(
         <List>
-            { drinks.length > 0 ?
+            { drinks?.length > 0 ?
                 drinks.map( drink => (<Drink key={drink.idDrink} image={drink.strDrinkThumb} text={drink.strDrink} idDrink={drink.idDrink}/>) )
             : null }
         </List>
