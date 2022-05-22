@@ -12,7 +12,7 @@ export const DetailView = () =>{
 
     const {id}=useParams();
     const {cocktail, ingredients} = useGetCocktail(id)
-    console.log(cocktail, ingredients)
+    
     return(
         <>
             <TitleSection>{cocktail.strDrink}</TitleSection>

@@ -7,13 +7,10 @@ import { ListDrinks } from './components/ListDriks';
 export const Home = () =>{
     const cocktailsRandom = useGetRandomCockTail();
     const { setDrinks } = useContext(DrinksContext)
-
+    
     useEffect(()=>{
-        while (cocktailsRandom === []) {
-            console.log("esparando...")
-        }
         setDrinks(cocktailsRandom)
-    })
+    }, [cocktailsRandom])
 
     return(
         <>

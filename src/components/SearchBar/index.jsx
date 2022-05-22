@@ -13,6 +13,7 @@ export const SearchBar=()=>{
 
     const handleSubmit=async (e, name)=>{
         e.preventDefault()
+        setDrinks([]);
         let cocktails = await  getCocktailsList(name);
         await setDrinks(cocktails);
         setSearch('');
